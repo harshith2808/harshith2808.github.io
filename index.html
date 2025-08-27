@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thumma Sai Harshith – Portfolio</title>
+  <meta name="description" content="Portfolio of Thumma Sai HARSHITH – Final-year CSE student at SR University." />
+  <meta name="author" content="Thumma Sai Harshith" />
+  <meta name="theme-color" content="#0f172a" />
+  
+  <style>
+    /* ===== Reset ===== */
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Segoe UI',sans-serif;background:linear-gradient(135deg,#1e3a8a,#0f172a);color:#f3f4f6;line-height:1.6;}
+    a{color:#38bdf8;text-decoration:none}
+    a:hover{color:#0ea5e9}
+
+    /* ===== Layout ===== */
+    .container{max-width:1000px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(15,23,42,0.85);padding:16px 24px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,0.1);backdrop-filter:blur(6px);}
+    .nav-links a{margin-left:20px;font-weight:600}
+    .btn{padding:10px 16px;border-radius:999px;background:#38bdf8;color:#0f172a;font-weight:600;border:none;cursor:pointer;transition:all 0.3s ease;}
+    .btn:hover{transform:scale(1.05)}
+    .btn.outline{background:transparent;color:#f3f4f6;border:2px solid #38bdf8}
+
+    /* ===== Hero ===== */
+    .hero{padding:80px 0;text-align:center}
+    .hero h1{font-size:3rem;margin-bottom:16px}
+    .hero p{max-width:700px;margin:0 auto 20px;color:#cbd5e1;font-size:1.1rem}
+    .stack{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:20px}
+    .stack .tag{padding:8px 16px;border-radius:20px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2);font-size:14px;transform:skewX(-10deg);transition:all 0.3s ease}
+    .stack .tag:hover{background:#38bdf8;color:#0f172a;transform:skewX(0deg) scale(1.1)}
+
+    /* Sections */
+    section{padding:60px 0}
+    .section-title{font-size:2rem;margin-bottom:24px;border-left:6px solid #38bdf8;padding-left:16px;display:inline-block}
+    .card{background:rgba(255,255,255,0.05);padding:24px;border-radius:30px;margin-bottom:24px;border:1px solid rgba(255,255,255,0.2);box-shadow:0 8px 20px rgba(0,0,0,0.4);transition:all 0.3s ease;}
+    .card:hover{transform:translateY(-5px) scale(1.02);border-color:#38bdf8}
+    .grid{display:grid;gap:24px}
+    .grid.cols-2{grid-template-columns:repeat(2,1fr)}
+    .grid.cols-3{grid-template-columns:repeat(3,1fr)}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:24px;border-left:3px solid #38bdf8}
+    .t-item{margin-bottom:24px}
+    .t-item h3{margin-bottom:6px}
+
+    /* Footer */
+    footer{padding:40px 0;text-align:center;color:#94a3b8;border-top:1px solid rgba(255,255,255,0.2)}
+
+    /* Responsive */
+    @media(max-width:768px){
+      .grid.cols-2,.grid.cols-3{grid-template-columns:1fr}
+      header{flex-direction:column;align-items:flex-start}
+      .nav-links{margin-top:12px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div><strong>Thumma Sai Harshith</strong><div style="font-size:0.9rem;color:#94a3b8">Final‑year Computer Science Engineering student</div></div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#certs">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <h1>Hi, I'm Sai Harshith — Data Analyst & software Engineer</h1>
+      <p> Final-year Computer Science student with a strong foundation in programming, data structures, and
+ algorithms. Proficient in Python, Java, and C, with hands-on experience developing projects and solving
+ real-world problems.</p>
+      <div class="stack">
+        <span class="tag">SQL</span>
+        <span class="tag">Python</span>
+        <span class="tag">Power Bi</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Ms Excel</span>
+      </div>
+      <p style="margin-top:20px">
+        <a class="btn" href="mailto:saiharshith284@gmail.com">Email Me</a>
+        <a class="btn outline" href="#projects">See Projects</a>
+        <a class="btn outline" href="https://drive.google.com/file/d/1OHLsqfPFqwKXvHpf2CHFwCdQCHWoymzr/view?usp=sharing" download>Download Resume</a>
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <h2 class="section-title">About</h2>
+      <div class="card">
+        <p>Aspiring Data Analyst with strong SQL skills, proficient in Python, C, Java, Power BI, and MS Excel, with excellent problem-solving abilities (DSA). Passionate about turning data into actionable insights to drive informed decisions.</p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <div class="card timeline">
+        <div class="t-item">
+          <h3>SR University — B.Tech in Computer Science Engineering</h3>
+          <div class="sub">Sep 2022 – May 2026 · GPA: 9.10/10</div>
+        </div>
+        <div class="t-item">
+          <h3>SR Junior College — Intermediate Education</h3>
+          <div class="sub">Jun 2020 – May 2022 · 916/1000</div>
+        </div>
+        <div class="t-item">
+          <h3>SR National High School — Secondary School Certificate</h3>
+          <div class="sub">Jun 2018 – May 2019 · GPA: 9.3/10</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Data Analytics Intern</h3>
+          <div class="sub">May 2025 – Jun 2025</div>
+          <ul>
+            <li>Completed an internship where I cleaned large datasets using Excel, SQL, and Python, and developed
+ interactive Power BI reports with 15 custom DAX formulas.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Embedded System Devolper Virtual Internship, AICTE Eduskills</h3>
+          <div class="sub">Jan 2024 – March 2024</div>
+          <ul>
+            <li>Completed an Embedded System Devolper Virtual Internship supported by Microchip,Gained knowledge in
+ designing, programming, and testing embedded systems using microcontrollers </li>
+            
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>HR Data Analytics</h3>
+          <div class="sub">April 2025</div>
+          <p>Designed a Power BI dashboard for the HR team to track employee data—including working hours,
+              attendance, performance, and leaves—streamlining processes and saving 3–4 hours of work daily.</p>
+        </div>
+        <div class="card">
+          <h3>Automated Attendance System Using Image Capture</h3>
+          <div class="sub">Dec 2024</div>
+          <p>Developed an automated attendance system using image capture and facial recognition, ensuring high
+ accuracy, preventing proxy attendance, and saving time—making it ideal for large groups in both
+ physical and remote settings..</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="card stack">
+        <span class="tag">SQL</span>
+        <span class="tag">DBMS</span>
+        <span class="tag">Operating System</span>
+        <span class="tag">Data Structures And Algorithms</span>
+        <span class="tag">Python</span>
+        <span class="tag">C</span>
+        <span class="tag">Java</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">Ms Excel</span>
+        <span class="tag">Power Bi</span>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certs">
+      <h2 class="section-title">Certifications</h2>
+      <div class="grid cols-3">
+        <div class="card">Data Analytics — Accenture</div>
+        <div class="card">Introduction To Databases— Coursera</div>
+        <div class="card">SQL— HackerRank</div>
+        <div class="card">Problem Solving — HackerRank</div>
+        <div class="card">python Essentials 1-Cisco</div>
+        <div class="card">python Essentials 2-Cisco</div>
+        <div class="card">Introduction to Computer Networks — Cisco</div>
+        <div class="card">Hackathon Participation — SR University</div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="grid cols-2">
+        <div class="card">
+          <p><strong>Email:</strong> <a href="mailto:saiharshith284@gmail.com">saiharshith284@gmail.com</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+919121985928">+91 9121985928</a></p>
+          <p>Based in Telangana, India</p>
+        </div>
+        <div class="card">
+          <p style="display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn outline" href="https://www.linkedin.com/in/sai-harshith-4b3766290/" target="_blank">LinkedIn</a>
+            <a class="btn outline" href="https://github.com/harshith2808" target="_blank">GitHub</a>
+            <a class="btn outline" href="https://www.hackerrank.com/profile/saiharshith284" target="_blank">HackerRank</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span>  ·Thumma Sai Harshith Built with HTML & CSS & JS
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
